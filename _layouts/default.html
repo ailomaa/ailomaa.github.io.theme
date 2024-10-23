@@ -2,9 +2,28 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="assets/style.css">
-<body>
-<header>This is a header</header>
-<main>{{ content }}</main>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body class="noto-sans normal">
+<header>
+    <a href="https://clasp.gu.se">
+        <div class="centered header-main noto-sans semi-bold">CLASP</div>
+        <div class="centered header-description noto-sans normal">The Centre for Linguistic Theory and Studies in Probability</div>
+    </a>
+</header>
+<navigation class="noto-sans normal">
+<ul>
+    <li><a href="./">Home</a></li>
+    <li><a href="./calendar">Calendar</a></li>
+    <li><a href="./about">About</a></li>
+    <li><a href=""></a></li>
+</ul>
+</navigation>
+<div class="h-line"></div>
+<main class="noto-sans normal">
+{{content}}
+</main>
 </body>
 </html>
